@@ -1,0 +1,129 @@
+body {
+    background-color: #EFA18A ;  
+    margin: 0;
+    text-align: center;
+    font-family: 'Sacramento', cursive;
+    font-size: 200%;
+    font-weight: normal;
+  }
+a {
+  color:#f2ff8c;
+  text-decoration: none ;
+}
+a:hover{
+  color: #66a5ca;
+}
+  img {
+    border-style: dotted;
+    border-width: 10px;
+    border-color: rgb(255, 238, 0);
+    border-radius: 20%;
+}
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 10px;
+    border-color: rgb(255, 238, 0);
+   
+    width: 20%;
+  }
+h1 {
+    color: #C0EEE4;
+    position: fixed;
+    margin: 0 auto 0 auto;
+    line-height: 2;
+   }  
+p {
+   display: inline;
+  }
+/*  for classes use .  before */   
+.amber {
+        color: #ff7c77;
+        clear: both;
+        display:block;
+       }
+.blue {
+         background: #B6D0E2;
+        }
+.inv {
+      visibility: hidden;
+     }        
+.kk {
+     margin-top: 50 ;
+     position: relative;
+     bottom: 30px;
+    }
+.kk:hover{
+  background: #ff7c77 ;
+  background-image: -webkit-linear-gradient(top, #f07fac, #e0a484);
+  background-image: -moz-linear-gradient(top, #f07fac, #e0a484);
+  background-image: -ms-linear-gradient(top, #f07fac, #e0a484);
+  background-image: -o-linear-gradient(top, #f07fac, #e0a484);
+  background-image: linear-gradient( bottom, #f07fac, #e0a484);
+}
+.ki {float: left;
+     margin-left: 200px;}
+.ya {
+  background-color: bisque;
+}
+.yaa {
+  font-size: 650%;}
+.ho {
+  margin-top: 50;
+}
+.btn {
+  border: 0cm;
+  background: #7bb8e0;
+  background-image: -webkit-linear-gradient(top, #7bb8e0, #f2ff8c);
+  background-image: -moz-linear-gradient(top, #7bb8e0, #f2ff8c);
+  background-image: ms-linear-gradient(top, #7bb8e0, #f2ff8c);
+  background-image: -o-linear-gradient(top, #7bb8e0, #f2ff8c);
+  background-image: linear-gradient(to bottom, #7bb8e0, #f2ff8c);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ebb5c7;
+  font-size: 32px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f07fac;
+  background-image: -webkit-linear-gradient(top, #f07fac, #e0a484);
+  background-image: -moz-linear-gradient(top, #f07fac, #e0a484);
+  background-image: -ms-linear-gradient(top, #f07fac, #e0a484);
+  background-image: -o-linear-gradient(top, #f07fac, #e0a484);
+  background-image: linear-gradient(to bottom, #f07fac, #e0a484);
+  text-decoration: none;
+}
+
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  padding: $breadcrumb-padding-y $breadcrumb-padding-x;
+  margin-bottom: $breadcrumb-margin-bottom;
+  @include font-size($breadcrumb-font-size);
+  list-style: none;
+  background-color: $breadcrumb-bg;
+  @include border-radius($breadcrumb-border-radius);
+}
+
+.breadcrumb-item {
+  // The separator between breadcrumbs (by default, a forward-slash: "/")
+  + .breadcrumb-item {
+    padding-left: $breadcrumb-item-padding-x;
+
+    &::before {
+      float: left; // Suppress inline spacings and underlining of the separator
+      padding-right: $breadcrumb-item-padding-x;
+      color: $breadcrumb-divider-color;
+      content: var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider)) #{"/* rtl:"} var(--#{$variable-prefix}breadcrumb-divider, escape-svg($breadcrumb-divider-flipped)) #{"*/"};
+    }
+  }
+
+  &.active {
+    color: $breadcrumb-active-color;
+  }
+}
